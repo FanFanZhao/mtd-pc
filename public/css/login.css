@@ -1,7 +1,8 @@
 /* login */
 body{font-family: Avenir,Helvetica,Arial,sans-serif;background-color: #273142;overflow: auto;height: auto}
 .header{height: 60px;line-height: 60px;padding: 0 30px;background-color: #1a2330;color: #cdd6e4;font-size: 16px;font-family: \\5FAE\8F6F\96C5\9ED1,sans-serif;}
-.header-lf a{padding:0 30px;}
+.header-lf a{padding:0 30px;color:#cdd6e4;}
+.header-lf a:hover{color: #5697f4}
 .login{margin-right: 50px}
 .login a{color: #cdd6e4;}
 .login a:hover{text-decoration: none;color: #5697f4;}
