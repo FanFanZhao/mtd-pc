@@ -1,5 +1,5 @@
 /* login */
-body{font-family: Avenir,Helvetica,Arial,sans-serif;background-color: #273142;overflow: auto;height: auto}
+body{font-family: Avenir,Helvetica,Arial,sans-serif;background-color: #273142;font-size: 16px;}
 .header{height: 60px;line-height: 60px;padding: 0 30px;background-color: #1a2330;color: #cdd6e4;font-size: 16px;font-family: \\5FAE\8F6F\96C5\9ED1,sans-serif;}
 .header-lf a{padding:0 30px;color:#cdd6e4;}
 .header-lf a:hover{color: #5697f4}
@@ -7,24 +7,45 @@ body{font-family: Avenir,Helvetica,Arial,sans-serif;background-color: #273142;ov
 .login a{color: #cdd6e4;}
 .login a:hover{text-decoration: none;color: #5697f4;}
 .login a:nth-child(2){margin-left: 20px;}
-.language{position: relative;width: 98px;text-align: center;font-size: 14px;cursor: pointer;}
+.language{position: relative;width: 98px;font-size: 14px;cursor: pointer;}
 .language_box{border: 1px solid;border-radius: 10px;line-height: 18px;margin: 20px 0;}
-.language_choose{display: none; cursor: pointer;position: absolute;top: 60px;right: 0;width: 110px;line-height: 40px;text-align: center;background-color: #273142;z-index: 5000;border-radius: 3px;box-shadow: 0 0 2px 4px rgba(0,0,0,.2);}
+.language_choose{display: none; cursor: pointer;position: absolute;top: 60px;right: 0;width: 110px;line-height: 40px;background-color: #273142;z-index: 5000;border-radius: 3px;box-shadow: 0 0 2px 4px rgba(0,0,0,.2);}
 .language:hover .language_choose{display: block;}
 .language_choose p:hover{color: #5697f4;background: #1a2330}
 .contentBK{background-color: #1a2330}
-.login-wrap {background: url(../images/login_bg.png) no-repeat;background-size: cover;}
+.content-wrap {background: url(../images/login_bg.png) no-repeat;background-size: cover;}
 .account{width: 1500px;margin: 0 auto;padding-top: 30px;overflow: hidden;min-height: 880px;}
 .main{width: 420px;margin: 0 auto;padding-top: 110px;}
-.main_title{text-align: center;font-size: 36px;color: #cdd6e4;}
-.input-box{position: relative;margin-top: 40px;}
+.main_title{font-size: 36px;color: #cdd6e4;}
+.input-box,.register-input{position: relative;margin-top: 40px;}
 .input-main{width: 420px;height: 48px;border: 1px solid #52688c;padding: 0 20px;color: #cdd6e4;font-size: 16px;border-radius: 3px;background-color: #273142;padding-left: 68px; }
-.icon{width: 48px;height: 48px;line-height: 48px;border-right: 1px solid #52688c;position: absolute;top: 0;text-align: center;}
+.icon{width: 48px;height: 48px;line-height: 48px;border-right: 1px solid #52688c;position: absolute;top: 0;}
 .forgot{color: #5697f4;text-align: right;margin-top: 10px;cursor: pointer;}
-.login-btn{width: 420px;margin-top: 40px;background: #5697f4;text-align: center;font-size: 16px;border-radius: 4px;color: #fff;line-height: 48px;cursor: pointer;}
-.noaccount{text-align: center;color: #fff;margin-top: 20px;}
+.login-btn{width: 420px;margin-top: 40px;background: #5697f4;font-size: 16px;border-radius: 4px;color: #fff;line-height: 48px;cursor: pointer;}
+.noaccount{color: #fff;margin-top: 20px;}
 .noaccount a{color:#5697f4;}
 /* register */
+.mt20{margin-top: 20px;}
+.fColor1 {color: #cdd6e4;}
+.baseColor {color: #5697f4;}
+.curPer{cursor: pointer;}
+.main-register{padding: 60px 0 124px 150px;line-height: 48px;position: relative;}
+.choose-register span{line-height: 50px;height: 50px;display: inline-block;margin-right: 60px;cursor: pointer;}
+.choose-register span.on{color: #5697f4;border-bottom: 2px solid #5697f4;}
+.register-item{display: inline-block;width: 80px;text-align: right;color: #637085;}
+.input-content{margin-left: 20px;width: 428px;padding-left:20px;}
+.pic-code{position: absolute;left: 430px;top: 0;width: 100px;height: 48px;display: inline-block;}
+.phoneleft{position: absolute;width: 100px;height: 48px;text-align: center;left: 100px;font-size: 16px;color: #cdd6e4;border-right: 1px solid #52688c;}
+.msg-code{position: absolute;left: 422px;top: 1px;width: 110px;height: 46px;font-size: 16px;}
+.msg-code span{display: block;border-left: 1px solid #52688c;height: 20px;line-height: 20px;margin-top: 14px;}
+.register-agree{margin-top: 50px;font-size: 14px;}
+.agree{position: relative;top: 2px;}
+.register-button{margin-left: 20px;width:200px;display: inline-block;line-height: 48px;background-color: #5697f4;border-radius: 4px;color: #fff;border: none}
+.have-account{font-size: 14px;display:inline-block;width: 240px;text-align: right;color: #fff;}
+.right-tip{position: absolute;left: 800px;top: 200px;line-height: 24px;padding-right: 50px;margin-top: 10px;font-size: 14px;color: #637085;}
+.email{display: none;}
+
+
 
 
 

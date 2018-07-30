@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../public/css/base.css">
     <link rel="stylesheet" href="../public/css/login.css">
     <script src="../node_modules/layui-src/dist/layui.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -18,23 +19,100 @@
         </div>
         <div class="fr">
             <div class="login fl">
-                <a href="">登录</a>
+                <a href="login.html">登录</a>
                 <a href="">注册</a>
             </div>
             <div class="language fl">
-                <div class="language_box">
+                <div class="language_box ac">
                     <span>简体中文</span>  
                     <img src="../public/images/select.png" alt=""> 
                 </div>
-                <div class="language_choose">
+                <div class="language_choose ac">
                     <p>简体中文</p>
                     <p>English</p>
                 </div>
             </div>
         </div>
     </header>
-    <section class="main-register">
-
+    <section class="contentBK">
+        <div class="content-wrap">
+            <div class="account">
+                <div class="main-register">
+                    <p class="main_title">账户注册</p>
+                    <div class="choose-register mt20 fColor1 ">
+                        <span class="on">手机注册</span>
+                        <span>邮箱注册</span>
+                    </div>
+                    <div class="register-input phone">
+                        <span class="register-item">手机号码</span>
+                        <input type="text" class="input-main input-content" placeholder="请输入正确手机号" maxlength="11" style="padding-left: 120px;">
+                        <span class="phoneleft">+86</span>
+                    </div>
+                    <div class="register-input email">
+                        <span class="register-item">邮箱地址</span>
+                        <input type="text" class="input-main input-content" placeholder="请输入您的邮箱地址" maxlength="11">
+                    </div>
+                    <div class="register-input">
+                        <span class="register-item">验证码</span>
+                        <input type="text" class="input-main input-content" maxlength="6" style="width:316px">
+                        <img src="http://116.62.127.60:8110/api/web/registLogin/getImageCode?uuid=6d60-89f6-6da1-e7be-32d0d77b4171&language=zh" alt="" class="pic-code curPer">
+                    </div>
+                    <div class="register-input phone">
+                        <span class="register-item">短信验证码</span>
+                        <input type="password" class="input-main input-content" maxlength="6">
+                        <div class="msg-code ac baseColor curPer">
+                            <span>获取验证码</span>
+                        </div>
+                    </div>
+                    <div class="register-input email">
+                        <span class="register-item">邮箱验证码</span>
+                        <input type="password" class="input-main input-content" maxlength="6">
+                        <div class="msg-code ac baseColor curPer">
+                            <span>获取验证码</span>
+                        </div>
+                    </div>
+                    <div class="register-input">
+                        <span class="register-item">登录密码</span>
+                        <input type="password" placeholder="8-16位字符，不能为纯数字" maxlength="16" class="input-main input-content">
+                    </div>
+                    <div class="register-input">
+                        <span class="register-item">确认密码</span>
+                        <input type="password" placeholder="请再次输入登录密码" maxlength="16" class="input-main input-content">
+                    </div>
+                    <div class="register-agree">
+                        <span class="register-item" style="margin-right: 20px;">&nbsp</span>
+                        <input type="checkbox" class="agree">
+                        <span class="fColor1">我已阅读并同意</span>
+                        <span class="baseColor curPer">《用户协议》</span>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <span class="register-item">&nbsp</span>
+                        <button class="register-button">注册</button>
+                        <div class="have-account">
+                            <span>已有账号，</span>
+                            <a href="" class="baseColor">立即登录</a>
+                        </div>
+                    </div>
+                    <div class="right-tip">
+                        <p>海外用户建议使用邮箱注册，避免接收不到短信验证码的情况</p>
+                        <p style="margin-top: 20px;">验证邮件可能被误判为垃圾邮件，请注意查收</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <script>
+        $(".choose-register>span").on("click",function(){
+            var n = $(".choose-register>span").index(this);
+            $(this).addClass('on').siblings().removeClass('on');
+            if(n==0){
+                $(".phone").show();
+                $(".email").hide();
+            }else{
+                $(".phone").hide();
+                $(".email").show();
+            }
+        })
+    </script>
 </body>
 </html>
