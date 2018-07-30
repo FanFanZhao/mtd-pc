@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../public/css/base.css">
     <link rel="stylesheet" href="../public/css/login.css">
     <script src="../node_modules/layui-src/dist/layui.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -60,5 +61,13 @@
             </div>
         </div>
     </section>
+    <script>
+    $('.input-main').focus(function(){
+            $(this).css("border-color","#5697f4")
+        })
+    $('.input-main').blur(function(){
+        $(this).css("border-color","#52688c")
+    })
+    </script>
 </body>
 </html>
