@@ -1,0 +1,11 @@
+.font-col-gray {
+  color: #999;
+}
+.font-col-main {
+  color: #37bac9;
+}
+.gg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
