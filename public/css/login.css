@@ -1,9 +1,60 @@
+/* base */
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #5697f4; 
+    }
+  .clearfix:before,
+  .clearfix:after {
+      content: " ";
+      display: inline-block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+  }
+  .clearfix {
+      *zoom: 1;
+  }
+  
+  /*公共类*/
+  .fl {
+      float: left
+  }
+  .fr {
+      float: right
+  }
+  .al {
+      text-align: left
+  }
+  .ac {
+      text-align: center
+  }
+  .ar {
+      text-align: right
+  }
+  .hide {
+      display: none
+  }
+/* login */
 body{font-family: Avenir,Helvetica,Arial,sans-serif;background-color: #273142;overflow: auto;height: auto}
 .header{height: 60px;line-height: 60px;padding: 0 30px;background-color: #1a2330;color: #cdd6e4;font-size: 16px;font-family: \\5FAE\8F6F\96C5\9ED1,sans-serif;}
-.header-lf span{padding:0 30px;}
+.header-lf a{padding:0 30px;}
 .login{margin-right: 50px}
 .login a{color: #cdd6e4;}
-.login a:hover{text-decoration: none;color: #5697f4}
+.login a:hover{text-decoration: none;color: #5697f4;}
 .login a:nth-child(2){margin-left: 20px;}
 .language{position: relative;width: 98px;text-align: center;font-size: 14px;cursor: pointer;}
 .language_box{border: 1px solid;border-radius: 10px;line-height: 18px;margin: 20px 0;}
@@ -20,10 +71,9 @@ body{font-family: Avenir,Helvetica,Arial,sans-serif;background-color: #273142;ov
 .icon{width: 48px;height: 48px;line-height: 48px;border-right: 1px solid #52688c;position: absolute;top: 0;text-align: center;}
 .forgot{color: #5697f4;text-align: right;margin-top: 10px;cursor: pointer;}
 .login-btn{width: 420px;margin-top: 40px;background: #5697f4;text-align: center;font-size: 16px;border-radius: 4px;color: #fff;line-height: 48px;cursor: pointer;}
-
-
-
-
+.noaccount{text-align: center;color: #fff;margin-top: 20px;}
+.noaccount a{color:#5697f4;}
+/* register */
 
 
 
