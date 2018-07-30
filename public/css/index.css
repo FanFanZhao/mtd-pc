@@ -2,7 +2,8 @@ body{font-family: Avenir,Helvetica,Arial,sans-serif;background-color: #273142;ov
 .header{height: 60px;line-height: 60px;padding: 0 30px;background-color: #1a2330;color: #cdd6e4;font-size: 16px;font-family: \\5FAE\8F6F\96C5\9ED1,sans-serif;}
 .header-lf span{padding:0 30px;}
 .login{margin-right: 50px}
-.login a{color: #cdd6e4}
+.login a{color: #cdd6e4;}
+.login a:hover{text-decoration: none;color: #5697f4}
 .login a:nth-child(2){margin-left: 20px;}
 .language{position: relative;width: 98px;text-align: center;font-size: 14px;cursor: pointer;}
 .language_box{border: 1px solid;border-radius: 10px;line-height: 18px;margin: 20px 0;}
