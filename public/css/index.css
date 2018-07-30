@@ -1,0 +1,30 @@
+body{font-family: Avenir,Helvetica,Arial,sans-serif;background-color: #273142;overflow: auto;height: auto}
+.header{height: 60px;line-height: 60px;padding: 0 30px;background-color: #1a2330;color: #cdd6e4;font-size: 16px;font-family: \\5FAE\8F6F\96C5\9ED1,sans-serif;}
+.header-lf span{padding:0 30px;}
+.login{margin-right: 50px}
+.login a{color: #cdd6e4}
+.login a:nth-child(2){margin-left: 20px;}
+.language{position: relative;width: 98px;text-align: center;font-size: 14px;cursor: pointer;}
+.language_box{border: 1px solid;border-radius: 10px;line-height: 18px;margin: 20px 0;}
+.language_choose{display: none; cursor: pointer;position: absolute;top: 60px;right: 0;width: 110px;line-height: 40px;text-align: center;background-color: #273142;z-index: 5000;border-radius: 3px;box-shadow: 0 0 2px 4px rgba(0,0,0,.2);}
+.language:hover .language_choose{display: block;}
+.language_choose p:hover{color: #5697f4;background: #1a2330}
+.contentBK{background-color: #1a2330}
+.login-wrap {background: url(../images/login_bg.png) no-repeat;background-size: cover;}
+.account{width: 1500px;margin: 0 auto;padding-top: 30px;overflow: hidden;min-height: 880px;}
+.main{width: 420px;margin: 0 auto;padding-top: 110px;}
+.main_title{text-align: center;font-size: 36px;color: #cdd6e4;}
+.input-box{position: relative;margin-top: 40px;}
+.input-main{width: 420px;height: 48px;border: 1px solid #52688c;padding: 0 20px;color: #cdd6e4;font-size: 16px;border-radius: 3px;background-color: #273142;padding-left: 68px; }
+.icon{width: 48px;height: 48px;line-height: 48px;border-right: 1px solid #52688c;position: absolute;top: 0;text-align: center;}
+.forgot{color: #5697f4;text-align: right;margin-top: 10px;cursor: pointer;}
+.login-btn{width: 420px;margin-top: 40px;background: #5697f4;text-align: center;font-size: 16px;border-radius: 4px;color: #fff;line-height: 48px;cursor: pointer;}
+
+
+
+
+
+
+
+
+
