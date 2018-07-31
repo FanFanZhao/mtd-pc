@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../public/css/base.css">
     <link rel="stylesheet" href="../public/css/login.css">
     <script src="../node_modules/layui-src/dist/layui.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -19,14 +20,14 @@
         <div class="fr">
             <div class="login fl">
                 <a href="">登录</a>
-                <a href="">注册</a>
+                <a href="register.html">注册</a>
             </div>
-            <div class="language fl">
+            <div class="language fl ac">
                 <div class="language_box">
                    <span>简体中文</span>  
                    <img src="../public/images/select.png" alt=""> 
                 </div>
-                <div class="language_choose">
+                <div class="language_choose ac">
                    <p>简体中文</p>
                    <p>English</p>
                 </div>
@@ -34,31 +35,39 @@
         </div>
     </header>
     <section class="contentBK">
-        <div class="login-wrap">
+        <div class="content-wrap">
             <div class="account">
                 <div class="main">
-                    <p class="main_title">账户登录</p>
+                    <p class="main_title ac">账户登录</p>
                     <div class="input-box">
                         <input type="text" placeholder="已绑定手机/邮箱" maxlength="20" class="input-main">
-                        <div class="icon">
+                        <div class="icon ac">
                             <img src="../public/images/user.png" alt="">
                         </div>
                     </div>
                     <div class="input-box">
                         <input type="password" placeholder="密码" maxlength="16" class="input-main">
-                        <div class="icon">
+                        <div class="icon ac">
                             <img src="../public/images/lock.png" alt="">
                         </div>
                     </div>
                     <p class="forgot"><span>忘记密码?</span></p>
-                    <div class="login-btn">登录</div>
-                    <div class="noaccount">
-                        <span>暂无账号</span>
-                        <a href="">立即登录</a>
+                    <div class="login-btn ac">登录</div>
+                    <div class="noaccount ac">
+                        <span>暂无账号，</span>
+                        <a href="">立即注册</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script>
+    $('.input-main').focus(function(){
+            $(this).css("border-color","#5697f4")
+        })
+    $('.input-main').blur(function(){
+        $(this).css("border-color","#52688c")
+    })
+    </script>
 </body>
 </html>
