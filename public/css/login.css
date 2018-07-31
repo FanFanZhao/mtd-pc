@@ -26,11 +26,13 @@ body{font-family: Avenir,Helvetica,Arial,sans-serif;background-color: #273142;fo
 .noaccount a{color:#5697f4;}
 /* register */
 .mt20{margin-top: 20px;}
+.mt10{margin-top:10px;}
 .fColor1 {color: #cdd6e4;}
 .baseColor {color: #5697f4;}
 .curPer{cursor: pointer;}
 .main-register{padding: 60px 0 124px 150px;line-height: 48px;position: relative;}
-.choose-register span{line-height: 50px;height: 50px;display: inline-block;margin-right: 60px;cursor: pointer;}
+.choose-register span{line-height: 50px;height: 50px;display: inline-block;cursor: pointer;}
+.choose-register span:nth-child(1){margin-right: 60px;}
 .choose-register span.on{color: #5697f4;border-bottom: 2px solid #5697f4;}
 .register-item{display: inline-block;width: 80px;text-align: right;color: #637085;}
 .input-content{margin-left: 20px;width: 428px;padding-left:20px;}
@@ -44,8 +46,8 @@ body{font-family: Avenir,Helvetica,Arial,sans-serif;background-color: #273142;fo
 .have-account{font-size: 14px;display:inline-block;width: 240px;text-align: right;color: #fff;}
 .right-tip{position: absolute;left: 800px;top: 200px;line-height: 24px;padding-right: 50px;margin-top: 10px;font-size: 14px;color: #637085;}
 .email{display: none;}
-
-
+/* findpwd */
+.main-findpwd{width: 580px;padding: 90px 0 200px;margin: 0 auto;line-height: 48px;position: relative;}
 
 
 
