@@ -1,0 +1,19 @@
+$(function(){
+    $('.input-main').focus(function(){
+        $(this).css("border-color","#5697f4")
+    });
+    $('.input-main').blur(function(){
+        $(this).css("border-color","#52688c")
+    });
+    $(".choose-register>span").on("click",function(){
+        var n = $(".choose-register>span").index(this);
+        $(this).addClass('on').siblings().removeClass('on');
+        if(n==0){
+            $(".phone").show();
+            $(".email").hide();
+        }else{
+            $(".phone").hide();
+            $(".email").show();
+        }
+    })
+})

@@ -83,14 +83,14 @@
                         <span class="register-item" style="margin-right: 20px;">&nbsp</span>
                         <input type="checkbox" class="agree">
                         <span class="fColor1">我已阅读并同意</span>
-                        <span class="baseColor curPer">《用户协议》</span>
+                        <span class="baseColor curPer" id="protocol">《用户协议》</span>
                     </div>
                     <div style="margin-top: 10px;">
                         <span class="register-item">&nbsp</span>
                         <button class="register-button">注册</button>
                         <div class="have-account">
                             <span>已有账号，</span>
-                            <a href="" class="baseColor">立即登录</a>
+                            <a href="login.html" class="baseColor">立即登录</a>
                         </div>
                     </div>
                     <div class="right-tip">
@@ -101,24 +101,9 @@
             </div>
         </div>
     </section>
+    <script src="../public/js/login.js"></script>
     <script>
-        $(".choose-register>span").on("click",function(){
-            var n = $(".choose-register>span").index(this);
-            $(this).addClass('on').siblings().removeClass('on');
-            if(n==0){
-                $(".phone").show();
-                $(".email").hide();
-            }else{
-                $(".phone").hide();
-                $(".email").show();
-            }
-        })
-        $('.input-main').focus(function(){
-            $(this).css("border-color","#5697f4")
-        })
-        $('.input-main').blur(function(){
-            $(this).css("border-color","#52688c")
-        })
+
     </script>
 </body>
 </html>

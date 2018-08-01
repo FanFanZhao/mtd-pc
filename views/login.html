@@ -51,23 +51,16 @@
                             <img src="../public/images/lock.png" alt="">
                         </div>
                     </div>
-                    <p class="forgot"><span>忘记密码?</span></p>
+                    <p class="forgot"><a href="findpwd.html" class="baseColor">忘记密码?</a></p>
                     <div class="login-btn ac">登录</div>
                     <div class="noaccount ac">
                         <span>暂无账号，</span>
-                        <a href="">立即注册</a>
+                        <a href="register.html">立即注册</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <script>
-    $('.input-main').focus(function(){
-            $(this).css("border-color","#5697f4")
-        })
-    $('.input-main').blur(function(){
-        $(this).css("border-color","#52688c")
-    })
-    </script>
+    <script src="../public/js/login.js"></script>
 </body>
 </html>

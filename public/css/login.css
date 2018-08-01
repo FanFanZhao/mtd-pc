@@ -48,7 +48,7 @@ body{font-family: Avenir,Helvetica,Arial,sans-serif;background-color: #273142;fo
 .email{display: none;}
 /* findpwd */
 .main-findpwd{width: 580px;padding: 90px 0 200px;margin: 0 auto;line-height: 48px;position: relative;}
-
+.findpwd-btn{display: inline-block;width: 428px;margin-left: 20px;background-color: #5697f4;border-radius: 4px;color: #fff;line-height: 48px;font-size: 16px;}
 
 
 
